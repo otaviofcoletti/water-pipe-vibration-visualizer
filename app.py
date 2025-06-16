@@ -28,6 +28,7 @@ The dataset contains two types of visualization:
 3. Use the selector below to choose which flow condition you wish to visualize.
 4. The application will extract a central window from both vibration and power signals to create side-by-side plots.
 5. You can select how many samples you want to display.
+6. The number means the L/h and the letter indicates the experiment letter.
 
 ---
 """)
@@ -94,7 +95,7 @@ else:
         axes[1].plot(power, color='orange')
         axes[1].set_title(f"Power - {selected_pair}", fontsize=16)
         axes[1].set_xlabel('Sample', fontsize=14)
-        axes[1].set_ylabel('Power (W)', fontsize=14)
+        axes[1].set_ylabel('Power (uW)', fontsize=14)
         axes[1].grid(True)
 
         plt.tight_layout()
